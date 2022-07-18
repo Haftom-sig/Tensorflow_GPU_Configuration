@@ -29,9 +29,9 @@ sudo add-apt-repository ppa:graphics-drivers/ppa
 sudo apt update
 
 # install nvidia driver with dependencies
-sudo apt install libnvidia-common-470
-sudo apt install libnvidia-gl-470
-sudo apt install nvidia-driver-470
+sudo apt install libnvidia-common-515
+sudo apt install libnvidia-gl-515
+sudo apt install nvidia-driver-515
 
 sudo apt-key adv --fetch-keys http://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/7fa2af80.pub
 echo "deb https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64 /" | sudo tee /etc/apt/sources.list.d/cuda.list
@@ -64,14 +64,14 @@ nvcc -V
 
 # install Tensorflow (an open source machine learning framework) according to the table below.
 
-Version	               Python ver.	Compiler	                Build tools	cuDNN	CUDA
-tensorflow-2.9.0	3.7-3.10	               GCC 9.3.1	Bazel 5.0.0	8.1	11.2
-tensorflow-2.8.0	3.7-3.10	               GCC 7.3.1	Bazel 4.2.1	8.1	11.2
-tensorflow-2.7.0	3.7-3.9		GCC 7.3.1	Bazel 3.7.2	8.1	11.2
-tensorflow-2.6.0	3.6-3.9		GCC 7.3.1	Bazel 3.7.2	8.1	11.2
-tensorflow-2.5.0	3.6-3.9		GCC 7.3.1	Bazel 3.7.2	8.1	11.2
-tensorflow-2.4.0	3.6-3.8		GCC 7.3.1	Bazel 3.1.0	8.0	11.0
-tensorflow-2.3.0	3.5-3.8		GCC 7.3.1	Bazel 3.1.0	7.6	10.1
-tensorflow-2.2.0	3.5-3.8		GCC 7.3.1	Bazel 2.0.0	7.6	10.1
-tensorflow-2.1.0	2.7, 3.5-3.7	GCC 7.3.1	Bazel 0.27.1	7.6	10.1
-tensorflow-2.0.0	2.7, 3.3-3.7	GCC 7.3.1	Bazel 0.26.1	7.4	10.0
+Version	               Python ver.	           Compiler	                Build tools	  cuDNN	  CUDA
+tensorflow-2.9.0	      3.7-3.10	               GCC 9.3.1	              Bazel 5.0.0	  8.1	    11.2
+tensorflow-2.8.0      	3.7-3.10	               GCC 7.3.1	              Bazel 4.2.1   8.1	    11.2
+tensorflow-2.7.0	      3.7-3.9		               GCC 7.3.1	              Bazel 3.7.2	  8.1	    11.2
+tensorflow-2.6.0	      3.6-3.9		               GCC 7.3.1	              Bazel 3.7.2	  8.1    	11.2
+tensorflow-2.5.0	      3.6-3.9		               GCC 7.3.1	              Bazel 3.7.2	  8.1	    11.2
+tensorflow-2.4.0	      3.6-3.8	               	GCC 7.3.1	              Bazel 3.1.0	  8.0	    11.0
+tensorflow-2.3.0	      3.5-3.8	               	GCC 7.3.1              	Bazel 3.1.0	  7.6    	10.1
+tensorflow-2.2.0	      3.5-3.8	               	GCC 7.3.1	              Bazel 2.0.0	  7.6	    10.1
+tensorflow-2.1.0	      2.7, 3.5-3.7	           GCC 7.3.1               Bazel 0.27.1	 7.6	    10.1
+tensorflow-2.0.0	      2.7, 3.3-3.7	           GCC 7.3.1	              Bazel 0.26.1 	7.4	    10.0
